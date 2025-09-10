@@ -1,0 +1,41 @@
+@media only screen and (min-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap:25px;
+        place-items: center;
+    }
+
+    .full-length {
+        display: grid;
+        grid-column: 1/4;
+    }
+
+    figcaption {
+        font-size: smaller;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .navigation {
+            display: flex;
+            margin-right: 1rem;
+        }
+
+        .navigation li {
+            display: block;
+            flex: 1 1 100%;
+        }
+
+        .navigation a {
+            text-align: center;
+        }
+
+        #menu {
+            display: none;
+        }
+}
